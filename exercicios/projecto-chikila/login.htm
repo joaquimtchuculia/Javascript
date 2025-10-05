@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/style-log.css">
 
     <title>chikilaonline</title>
 </head>
@@ -15,10 +15,10 @@
          <p class="img"><img id="img" src="imagem/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="amburguinho" onmouseenter="entrar()" onclick="sair()"></p>
     </div>
     <nav>
-        
-      
-        <a href="" class="menu">Inscrever-se</a>
-
+        <a href="" class="menu">Sobre</a>
+        <a href="niveis.html" class="menu">Níveis</a>
+        <a href="" class="menu">Inscritos</a>
+        <a href="index.html" class="menu">Inscrever-se</a>
     </nav>
     </header>
     <main>
@@ -33,16 +33,16 @@
      <div id="inscrever">
       <form action="#" method="post">
       <p>
-          <label for="nome">firstname</label>
+          <label for="nome">Name</label>
            <input type="text" name="nome" id="nome" placeholder="primeiro nome">
       </p>
        
      
       
-      <p><label for="num">Nºde telefone</label>
-      <input type="number" name="num" id="num" placeholder="Seu telefone"></p>
+      <p><label for="nif">NIF</label>
+      <input type="number" name="nif" id="nif" placeholder="Digite seu NIF"></p>
 
-      <p class="button"><input type="button" value="Login" id="button" onclick="inscrever()"></p>
+      <p class="button"><input type="button" value="Login" id="button" onclick="login()"></p>
 
       </form>
      </div>
@@ -55,6 +55,6 @@
     @ site desenvolvido pela SV-Tecnologia   
     </footer>
 
-    <script src="js/scriptlog.js"></script>
+    <script src="js/script-log.js"></script>
 </body>
 </html>

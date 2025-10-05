@@ -16,10 +16,10 @@ function sair() {
     
 }
 
-function inscrever() {
+function login() {
    let fnome = document.getElementById('nome') 
    
-   let fnum = document.getElementById('num')
+   let fnum = document.getElementById('nif')
    let res = document.getElementById('res')
    res.style.color='skyblue'
    res.style.font='bold'

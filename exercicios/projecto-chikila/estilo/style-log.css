@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background: #ffe1ff; 
+    color: #b695c2;  
+}
+header{
+    display: flex;
+    flex-direction: start;
+    background: #6c4886;
+    align-items: center;
+    justify-content: space-between;
+       
+}
+img{
+    width: 35px;
+    height: 30px;
+}
+img{
+    display: none;
+}
+header  h1{
+    flex: initial; 
+    color: white;
+    padding: 5px;
+}
+nav{
+    
+    padding: 5px;
+}
+a.menu{
+    
+color: white;
+background: #b695c2;
+padding: 5px;
+border-radius: 3px;
+text-decoration: none;
+}
+main{
+    width: 90vw;
+    height: 84vh;
+    margin: auto;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.849);
+    margin-top: 20px;
+
+}
+h2{
+    text-align: center;
+}
+section#form{
+    display: grid;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.548);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+p{
+    margin: 10px;
+    text-align: justify;
+
+}
+p.button{
+    text-align: center;
+
+}
+input{
+    padding: 5px;
+    background: #ffe1ffbb;
+    outline: none;
+    color: black;
+    border-radius: 3px;
+}
+input#button{
+    width: 150px;
+  display: inline-block;  
+  background: #6c4886;
+  color: white;
+  border-radius: 3px;
+  padding: 6px;
+  cursor: pointer;
+   
+}
+
+label{
+    color: white;
+    padding: 5px;
+    font: 17pt Arial;
+}
+
+footer{
+    background: #6c4886;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+ header{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+ }
+ div#cab{
+  width: 98vw;  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+ }
+ img{
+    display: block;
+    cursor: pointer;
+ } 
+ 
+ nav{
+    
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    gap: 5px;
+    text-align: center;
+
+ } 
+ a{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+ }
+ nav{
+    display: none;
+
+ }
+}
