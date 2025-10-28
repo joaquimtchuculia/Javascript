@@ -1,19 +1,30 @@
 let estudante = document.querySelector('input#nome')
 let senha = document.querySelector('input#senha')
+const estudanteReal = ["Joaquim", "Joaquim ", "Rita", "Rita ", "Marcos", "Marcos ", "Tchissola", "Tchissola ", "Juliana", "Juliana " ]
+const senhaReal = "Deldita"
 let res = document.querySelector('div#res')
+
 
 function entrar() {
  if (estudante.value.length==0 && senha.value.length==0) {
- res.innerHTML='preencha todos os campos!'   
+  
+ res.innerHTML='preencha todos os campos!'  
+ body.style.color='red' 
  } else{
   
-  let estudantes = ["Joaquim","Lauzzy"]  
-   if(senha.value != "Deoldita"){
-    res.style.color='red'
-    res.innerHTML='Senha incorreta'
+    
+   if(estudanteReal.includes(estudante.value) && senha.value == senhaReal){
+    res.style.color='green'
+    res.innerHTML='Carregando...'
+    
+    setTimeout(() => {
+
+      window.location.href = 'paginas/minhas_notas.html'
+    }, 2000);
     
    } else{
-    res.innerHTML='Login feito com sucesso'
+    res.style.color='red'
+    res.innerHTML='Dados incorrectos'
     
     
 
