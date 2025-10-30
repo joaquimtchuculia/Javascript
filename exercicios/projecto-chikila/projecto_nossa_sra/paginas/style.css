@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@media screen and (min-width: 350px) {
+
   *{
     margin: 0px;
   }
@@ -37,18 +37,22 @@ section{
   margin: auto;
   width: 90vw;
   padding: 10px;
-  height: 350px;
+  
   margin-top: 50px;
   margin-bottom: 10px;
   border-radius: 8px;
 }
 
 ul{
-  columns: 3;
+  display: grid;
+  grid-template: repeat(4,1fr)/ repeat(3,1fr);
+  gap: 5px;
+  
   
 }
 li{
-font-size: 17pt;
+ 
+font-size: 16pt;
 }
 table{
 border-collapse: collapse; 
@@ -80,4 +84,15 @@ footer{
   position: sticky;
   bottom: 0px;
 }
+@media screen and (max-width: 600px){
+
+  ul{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+
+
 }
