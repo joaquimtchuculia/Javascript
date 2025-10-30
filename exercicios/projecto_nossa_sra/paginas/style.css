@@ -1,0 +1,83 @@
+@charset "UTF-8";
+@media screen and (min-width: 350px) {
+  *{
+    margin: 0px;
+  }
+
+body{
+  font-family: 'Times New Roman', Times, serif;
+  background: rgb(255, 136, 0);
+  color: white;
+  text-align: center;
+}
+header{
+  margin-top: 0px;
+  background-color: darkblue;
+  margin-bottom: 10px;
+  position: sticky;
+  top: 0px;
+}
+h1, h3, h4{
+  text-shadow: 2px 2px 2px darkgrey;
+}
+h1#baixar{
+  font-size: 18pt;
+  color: darkblue;
+  text-shadow: none;
+  font-size: bold;
+  text-decoration: underline;
+  margin-bottom: 50px;
+}
+section{
+  display: flex; 
+  background: rgba(165, 99, 12, 0.678);
+  flex-direction: column;
+  align-content: center;
+  box-shadow: 2px 2px 13px rgba(255, 255, 255, 0.082);
+  margin: auto;
+  width: 90vw;
+  padding: 10px;
+  height: 350px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+ul{
+  columns: 3;
+  
+}
+li{
+font-size: 17pt;
+}
+table{
+border-collapse: collapse; 
+margin-bottom: 15px; 
+}
+a{
+  text-decoration: none;
+  margin-top: 10px;
+}
+th,td{
+  border: 1px solid black;
+  padding: 8px;
+  color: white;
+  
+}
+
+#voltar{
+  text-decoration: none;
+  font-size: 15pt;
+  margin: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: blue;
+}
+
+footer{
+  margin-top: 57vh;
+  background: darkblue;
+  padding: 2px;
+  position: sticky;
+  bottom: 0px;
+}
+}
