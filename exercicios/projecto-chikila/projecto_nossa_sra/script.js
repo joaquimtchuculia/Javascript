@@ -11,9 +11,10 @@ function entrar() {
  res.innerHTML='preencha todos os campos!'  
  res.style.color='red' 
  } else{
-  
+      
     
    if(estudanteReal.includes(estudante.value) && senha.value == senhaReal){
+    localStorage.setItem("verificado","sim")
     res.style.color='green'
     res.innerHTML='Carregando...'
     
@@ -21,6 +22,10 @@ function entrar() {
 
       window.location.href = 'paginas/minhas_notas.html'
     }, 2000);
+      setTimeout(() => {
+      localStorage.removeItem("verificado")
+      window.location.href="portal_colegio_sabedoria.html"
+    }, 5000);
     
    } else{
     res.style.color='red'
