@@ -1,0 +1,138 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#cabeca{
+position: sticky;
+background: url() 
+no-repeat center center ;
+display: flex;
+flex-direction: row;
+background-size: cover;
+top: 0px;    
+width: 100vw;
+height: 200px;
+margin-bottom: 10px;
+border: 1px solid red;
+}
+
+#logot{
+width: 75vw;
+height: 300px;
+margin: auto;
+}
+form#pq{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    width: 90vw;
+    margin: auto;
+}
+#psq{
+    width: 70vw;
+    height: 30px;
+    
+}
+#p{
+  width: 85px; 
+  height: 35px;
+  cursor: pointer;
+   
+}
+#men{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.493);
+    background: rgb(169, 110, 2);
+    color: white;
+    border-radius: 3px;
+    width: 90vw;
+    margin: 10px auto;
+    padding: 5px;
+    height: 35px;
+
+}
+
+#amburger{
+   cursor: pointer; 
+}
+#caixa1{  
+ width: 90vw;
+ margin: 5px auto;  
+border: 1px solid rgba(94, 0, 0, 0.24);
+padding: 5px;
+}
+
+#tacesso{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+input{
+ width: 300px;
+ height: 30px;   
+}
+pbut{
+
+    color: white;
+    text-align: center;
+}#button{
+    width: 100px;
+    background: rgb(169, 110, 2);
+    color: white;
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+div#res{
+    text-align: center;
+}
+
+
+#caixa2{
+   display: flex;  
+   flex-direction: column;
+border: 1px solid rgba(0, 0, 0, 0.377);
+width: 90vw;
+margin: 5px auto;
+}
+#caixa3{
+display: flex;
+border: 1px solid rgba(0, 0, 0, 0.308);
+margin: 5px auto;
+width: 90vw;
+}
+img#figura{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+}
+#caixa4{
+    position: sticky;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ height: 30px;   
+border: 1px solid rgba(0, 0, 0, 0.308);
+background: rgba(0, 0, 0, 0.514);
+color: white;
+}

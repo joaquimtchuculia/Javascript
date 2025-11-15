@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+  *{
+    margin: 0px;
+  }
+
+body{
+  font-family: 'Times New Roman', Times, serif;
+  background: rgb(255, 136, 0);
+  color: white;
+  text-align: center;
+}
+header{
+  margin-top: 0px;
+  background: rgba(0, 0, 139, 0.336);
+  margin-bottom: 10px;
+  position: sticky;
+  top: 0px;
+}
+h1, h3, h4{
+  text-shadow: 2px 2px 2px darkgrey;
+}
+h1#baixar{
+  font-size: 18pt;
+  color: darkblue;
+  text-shadow: none;
+  font-size: bold;
+  text-decoration: underline;
+  margin-bottom: 50px;
+}
+section{
+  display: flex; 
+  background: rgba(165, 99, 12, 0.678);
+  flex-direction: column;
+  align-content: center;
+  box-shadow: 2px 2px 13px rgba(255, 255, 255, 0.082);
+  margin: auto;
+  width: 90vw;
+  padding: 10px;
+  
+  margin-top: 50px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+ol{
+  display: grid;
+  grid-template: repeat(4,1fr)/ repeat(3,1fr);
+  gap: 5px;
+   
+}
+li{
+ 
+font-size: 16pt;
+}
+table{
+border-collapse: collapse; 
+margin-bottom: 15px; 
+}
+a{
+  text-decoration: none;
+  margin-top: 10px;
+}
+th,td{
+  border: 1px solid black;
+  padding: 8px;
+  color: white;
+  
+}
+
+#voltar{
+  background: darkblue;
+  color: white;
+  border-radius: 5px;
+  font-size: 15pt;
+  margin: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#voltar:hover{
+cursor: pointer;
+}
+
+footer{
+  margin-top: 57vh;
+   background: darkblue;
+  padding: 2px;
+  position: sticky;
+  bottom: 0px;
+}
+@media screen and (max-width: 600px){
+
+  ol{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+
+
+}

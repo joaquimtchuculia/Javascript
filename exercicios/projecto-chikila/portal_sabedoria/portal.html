@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portalProtegido</title>
+</head>
+<body>
+   <h1>BEM VINDO AO PORTAL ESPECIAL</h1> 
+   <input type="button" value="Terminar sessão" onclick="sair()">
+
+  <script>
+  if(localStorage.getItem("autenticado")!=="true"){
+     alert('Acesso negado! faça login primeiro')
+     window.location.href='storage.html'
+  }
+   function sair() {
+    localStorage.removeItem("autenticado")
+    window.location.href='storage.html'
+   }
+
+
+  </script>
+
+
+
+
+
+</body>
+</html>

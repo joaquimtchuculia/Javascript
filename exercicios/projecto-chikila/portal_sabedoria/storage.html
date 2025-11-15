@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localStorage</title>
+    <style>
+      section{
+        width: 600px;
+        height: 500px;
+        background: darkblue url(../FB_IMG_17529530883332850.jpg);
+      }
+      div{
+        width: 600px;
+        height: 500px;
+        background: rgba(255, 255, 0, 0.747);
+        display: none;
+      }
+     
+    </style>
+</head>
+<body>
+    <h1>ESTUDO DE LOCAL STORAGE</h1>
+  <form action="">
+  <input type="text" id="nome" placeholder="Seu nome">
+<br>  <input type="password" id="senha" placeholder="Senha"> <br>
+  <input type="button" value="Entrar" onclick="trocar()" >
+  </form>
+
+<section>
+<div id="div">
+ <h1>imagem automatica</h1>
+  <img id="rio" src="../FB_IMG_17529530682976001.jpg" alt="" width="350" height="250">
+
+
+</div>
+
+
+
+</section>
+
+
+
+<script>
+
+
+
+function entrar() {
+    const nome = document.getElementById('nome').value
+const senha = document.getElementById('senha').value
+   if (nome==="admin" && senha=="123") {
+    localStorage.setItem("autenticado","true")
+    setTimeout(() => {
+        window.location.href="portal.html"
+    }, 2000);
+
+   } else{
+    alert('Dados incorretos')
+
+   }
+}
+
+
+const data = [
+{nome:"JOAQUIM", idade:22, activo:true, sal:2000+"kz"}
+,
+{nome:"LAUZZY", idade:23, activo:false, sal:3000+"kz"}
+
+]
+
+const users = data.find((user) => {
+  return user.sal === 2000
+}
+)
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
