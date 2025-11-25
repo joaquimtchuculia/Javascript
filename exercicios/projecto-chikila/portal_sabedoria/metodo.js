@@ -26,7 +26,7 @@ function trocar() {
   
   let aux = imgAtual
   imgAtual = imgAnterior
-  imgAnterior = aux
+  
 }
 
 contador=Number(contador.value)
